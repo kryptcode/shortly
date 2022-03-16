@@ -53,7 +53,12 @@ export default function Home() {
             <div className='flex shadow-xl p-4 bg-white justify-between items-center rounded-md shadow-blue-100'>
               <p>{clown?.result?.original_link}</p>
               <div className='flex space-x-5 items-center'>
-                <a href={clown.result?.short_link} className='text-[#2acfcf] font-semibold' >
+                <a 
+                  href={clown.result?.short_link} 
+                  className='text-[#2acfcf] font-semibold'
+                  rel='noreferrer'
+                  target='_blank' 
+                >
                   {clown.result?.short_link}
                 </a>
               </div>
